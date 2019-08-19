@@ -1,0 +1,6 @@
+*.aux
+*.log
+*.toc
+_minted*
+*.pdf
+*.sql

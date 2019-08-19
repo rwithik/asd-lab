@@ -1,0 +1,84 @@
+\documentclass[draft,10pt,a4paper,titlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{minted}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\nonstopmode
+
+
+\begin{document}
+{\fontfamily{cmr}\selectfont
+\title{ \normalsize \textsc{}
+\\ [2.0cm]
+\HRule{0.5pt} \\
+\LARGE \textbf{\uppercase{Quiz 1 Report}
+\HRule{2pt} \\ [0.5cm]
+\normalsize \today \vspace*{5\baselineskip}}
+}
+
+\date{}
+
+\author{
+	Rwithik Manoj \\
+	College of Engineering, Trivandrum \\
+	Department of Computer Science and Engineering }
+
+\maketitle
+\tableofcontents
+\newpage
+
+\sectionfont{\scshape}
+
+\section{Weather Observation Station 3}
+
+\textbf{Question:} Query a list of CITY names from STATION with even ID numbers only. You may print the results in any order, but must exclude duplicates from your answer.\newline\newline
+\textbf{Solution:}\newline
+\begin{verbatim}
+SELECT DISTINCT city FROM Station 
+	WHERE (id-2*FLOOR(id/2) = 0);
+\end{verbatim}
+
+\section{Revising the Select Query}
+
+\textbf{Question:} Query all columns for all American cities in CITY with populations larger than 100000. The CountryCode for America is USA.\newline\newline
+\textbf{Solution:}\newline
+\begin{verbatim}
+SELECT * FROM City 
+	WHERE population > 100000 AND countrycode = 'USA';
+\end{verbatim}
+
+\section{Employee Names}
+
+\textbf{Question:} Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.\newline\newline
+\textbf{Solution:}\newline
+\begin{verbatim}
+SELECT name FROM Employee ORDER BY name
+\end{verbatim}
+
+\section{Average Population of Each Continent}
+
+\textbf{Question:} Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer.\newline\newline
+\textbf{Solution:}\newline
+\begin{verbatim}
+SELECT Country.continent, FLOOR(AVG(City.population)) 
+	FROM Country, City 
+	WHERE City.CountryCode = Country.code GROUP BY Country.continent;
+\end{verbatim}
+
+\section{Japan Population}
+
+\textbf{Question:} Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.\newline\newline
+\textbf{Solution:}\newline
+\begin{verbatim}
+SELECT SUM(population) FROM City WHERE countrycode = 'JPN';
+
+\end{verbatim}
+
+}
+\end{document}

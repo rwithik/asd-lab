@@ -1,0 +1,145 @@
+\documentclass[10pt,a4paper,titlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{minted}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\nonstopmode
+
+
+\begin{document}
+{\fontfamily{cmr}\selectfont
+\title{ \normalsize \textsc{}
+\\ [2.0cm]
+\HRule{0.5pt} \\
+\LARGE \textbf{\uppercase{basic sql queries i}
+\HRule{2pt} \\ [0.5cm]
+\normalsize \today \vspace*{5\baselineskip}}
+}
+
+\date{}
+
+\author{
+	Rwithik Manoj \\
+	College of Engineering, Trivandrum \\
+	Department of Computer Science and Engineering }
+
+\maketitle
+\tableofcontents
+\newpage
+
+\sectionfont{\scshape}
+
+\chapter{Data Constraints}
+
+Constraints are the rules enforced on data columns on table. These are used to prevent invalid data from being entered into the database, and hence ensures the accuracy and reliability of the data in the database.
+
+\section{NOT NULL Constraint}
+
+By default the data in a column can be NULL. If you don't want that to happen, use the NOT NULL constraint. 
+\\
+
+\textbf{Example:}\\
+\begin{verbatim}
+CREATE TABLE COMPANY1(
+ID INT PRIMARY KEY     NOT NULL,
+NAME           TEXT    NOT NULL,
+AGE            INT     NOT NULL,
+ADDRESS        CHAR(50),
+SALARY         REAL
+);
+\end{verbatim}
+
+\section{UNIQUE Constraint}
+
+This constraint prevents two rows in the table from having the same value for a column.
+\\
+
+\textbf{Example:}\\
+\begin{verbatim}
+CREATE TABLE COMPANY3(
+ID INT PRIMARY KEY     NOT NULL,
+NAME           TEXT    NOT NULL,
+AGE            INT     NOT NULL UNIQUE,
+ADDRESS        CHAR(50),
+SALARY         REAL    DEFAULT 50000.00
+);
+\end{verbatim}
+
+\section{PRIMARY KEY Constraint}
+
+The PRIMARY KEY constraint uniquely identifies each record in a database table. There can be more UNIQUE columns, but only one primary key in a table. Primary keys are important when designing the database tables. Primary keys are unique ids.
+
+A table can have only one primary key, which may consist of single or multiple fields. When multiple fields are used as a primary key, they are called a composite key.
+\\
+
+\textbf{Example:}\\
+\begin{verbatim}
+CREATE TABLE COMPANY4(
+ID INT PRIMARY KEY     NOT NULL,
+NAME           TEXT    NOT NULL,
+AGE            INT     NOT NULL,
+ADDRESS        CHAR(50),
+SALARY         REAL
+);
+\end{verbatim}
+
+\section{FOREIGN KEY Constraint}
+
+A foreign key constraint specifies that the values in a column (or a group of columns) must match the values appearing in some row of another table. We say this maintains the referential integrity between two related tables. 
+\\
+
+\textbf{Example:}\\
+\begin{verbatim}
+CREATE TABLE DEPARTMENT1(
+ID INT PRIMARY KEY      NOT NULL,
+DEPT           CHAR(50) NOT NULL,
+EMP_ID         INT      references COMPANY6(ID)
+);
+);
+\end{verbatim}
+
+\chapter{Views}
+
+Views are pseudo-tables. That is, they are not real tables, but appear as ordinary tables to SELECT. A view can represent a subset of a real table, selecting certain columns or certain rows from an ordinary table. A view can even represent joined tables. Because views are assigned separate permissions, you can use them to restrict table access so that the users see only specific rows or columns of a table.
+
+So, views are virtual tables that allow users to do the following:
+\begin{enumerate}
+		\item Structure data in a way that users or classes of users find natural or intuitive.
+		\item Restrict access to the data such that a user can only see limited data instead of complete table.
+		\item Summarize data from various tables, which can be used to generate reports.
+\end{enumerate}
+
+\section{Creating Views}
+
+Views can be created using CREATE VIEW command. 
+\\
+
+\textbf{Syntax:}
+\begin{verbatim}
+CREATE [TEMP | TEMPORARY] VIEW view_name AS
+SELECT column1, column2.....
+FROM table_name
+WHERE [condition];
+\end{verbatim}
+
+\\includegraphics[width=\\linewidth]{<++>}\\newline
+
+\section{Dropping Views}
+
+Views can be dropped using DROP VIEW command.
+
+\textbf{Syntax:}
+\begin{verbatim}
+DROP VIEW view_name;
+\end{verbatim}
+
+\\includegraphics[width=\\linewidth]{<++>}\\newline
+
+}
+\end{document}
