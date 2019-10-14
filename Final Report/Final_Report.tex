@@ -1,0 +1,140 @@
+
+\documentclass[10pt,a4paper,titlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage{geometry}
+\geometry{
+	left=4cm
+}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+ \usemintedstyle{xcode}
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.01cm}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\renewcommand{\chaptername}{Experiment}
+
+\nonstopmode
+
+
+\begin{document}
+% \begin{titlepage}
+
+% \begin{center}
+% {\LARGE College Of Engineering, Trivandrum}\\[1cm]
+% \linespread{1.2}\huge {\bfseries Application Software Development Lab\\CS333}\\[1cm]
+% \linespread{1}
+% \includegraphics[width=5cm]{../Images/index.jpeg}\\[1cm]
+% {\Large Rwithik Manoj\\ S5  CSE Roll No:53\\ TVE17CS054 }\\[1cm]
+% {\large \emph{Supervisors:} Vipin Vasu A V , Remya Krishnan}\\ [0.7cm]% if applicable
+% \large A report submitted in partial fulfilment of ASD lab work \\in Semester 5\\[0.3cm] 
+% \textit{in the}\\[0.3cm]
+% Department of Computer Science\\[0.5cm]
+% \today
+% \end{center}
+
+% \end{titlepage}
+
+\begin{titlepage}
+\vfill
+\begin{center}
+\includegraphics[width=2cm]{../Images/index.jpeg}
+\\[1cm]
+\begin{LARGE}
+\uppercase{College of Engineering}
+\\[0.3cm]
+\uppercase{Trivandrum}
+\end{LARGE}
+\\[1.5cm]
+\uppercase{Computer science and engineering}
+\\[0.2cm]
+\uppercase{Application software development lab}
+\\[0.5cm]
+{\Large CSE 333}
+\\[1cm]
+{\Large\uppercase{Application software development lab \\[0.1cm] report}}
+\HRule{0.01cm}
+\\[0.5cm]
+\uppercase{Certified bonafide record of work done by}
+\\[0.5cm]
+\uppercase{Rwithik Manoj}
+\\[0.4cm]
+\textsc{University Reg. No: TVE17CS054}
+\\[0.4cm]
+\textsc{Roll No: 53}
+\\[0.4cm]
+\textsc{Class: S5 CSE}
+\end{center}
+\vfill
+\textsc{Staff In-charge:}\\[0.4cm]
+VIPIN VASU A.V, REMYA KRISHNAN\\[0.4cm]
+\textsc{Department of Computer Science and Engineering}
+\end{titlepage}
+
+% \maketitle
+\tableofcontents
+\newpage
+
+\sectionfont{\scshape}
+\chapterfont{\scshape}
+
+\chapter{Installation of POSTGRESQL}
+\input{./53_Rwithik_Manoj_Installation.tex}
+\newpage
+
+\chapter{Introduction to SQL}
+\input{./53_Rwithik_Manoj_Introduction_to_Sql.tex}
+\newpage
+
+\chapter{Basic SQL Queries I}
+\input{./53_Rwithik_Manoj_Basic_Sql_Queries_I.tex}
+\newpage
+
+\chapter{Basic SQL Queries II}
+\input{./53_Rwithik_Manoj_Basic_Sql_Queries_II.tex}
+\newpage
+
+\chapter{Aggregate Functions}
+\input{./53_Rwithik_Manoj_Aggregate_Functions.tex}
+\newpage
+
+\chapter{Data Constraints and Views}
+\input{./53_Rwithik_Manoj_Constraints_And_Views.tex}
+\newpage
+
+\chapter{String Functions and Pattern Matching}
+\input{./53_Rwithik_Manoj_Strings.tex}
+\newpage
+
+\chapter{Join Statements, Set Operations, Nested Queries and Grouping}
+\input{./53_Rwithik_Manoj_Joins_and_Set_Ops.tex}
+\newpage
+
+\chapter{PL/SQL and Sequence}
+\input{./53_Rwithik_Manoj_PLSQL.tex}
+\newpage
+
+\chapter{Cursors}
+\input{./53_Rwithik_Manoj_Cursors.tex}
+\newpage
+
+\chapter{Triggers and Exception Handling}
+\input{./53_Rwithik_Manoj_Triggers.tex}
+\newpage
+
+\chapter{Procedure, Functions and Packages}
+\input{./53_Rwithik_Manoj_Functions.tex}
+\newpage
+
+
+    
+}
+\end{document}

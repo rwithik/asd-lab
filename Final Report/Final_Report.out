@@ -1,0 +1,77 @@
+\BOOKMARK [0][-]{chapter.1}{Installation of POSTGRESQL}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Aim}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Theory}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Installation}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Initial Configuration}{section.1.2}% 5
+\BOOKMARK [1][-]{section.1.3}{Result}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Introduction to SQL}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Aim}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Theory}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{History of SQL}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{How SQL Works}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{Syntax of SQL}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.4}{Datatypes in SQL}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Result}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Basic SQL Queries I}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Aim}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Theory}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{Code and Output}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.4}{Result}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Basic SQL Queries II}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Aim}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{Theory}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.3}{Code and Output}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.4}{Result}{chapter.4}% 24
+\BOOKMARK [0][-]{chapter.5}{Aggregate Functions}{}% 25
+\BOOKMARK [1][-]{section.5.1}{Aim}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.2}{Theory}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.3}{Code and Output}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.4}{Result}{chapter.5}% 29
+\BOOKMARK [0][-]{chapter.6}{Data Constraints and Views}{}% 30
+\BOOKMARK [1][-]{section.6.1}{Aim}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.2}{Theory}{chapter.6}% 32
+\BOOKMARK [2][-]{subsection.6.2.1}{Data Constraints}{section.6.2}% 33
+\BOOKMARK [2][-]{subsection.6.2.2}{Views}{section.6.2}% 34
+\BOOKMARK [1][-]{section.6.3}{Code and Output}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.4}{Result}{chapter.6}% 36
+\BOOKMARK [0][-]{chapter.7}{String Functions and Pattern Matching}{}% 37
+\BOOKMARK [1][-]{section.7.1}{Aim}{chapter.7}% 38
+\BOOKMARK [1][-]{section.7.2}{Theory}{chapter.7}% 39
+\BOOKMARK [2][-]{subsection.7.2.1}{String Functions}{section.7.2}% 40
+\BOOKMARK [1][-]{section.7.3}{LIKE keyword}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.4}{Code and Output}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.5}{Result}{chapter.7}% 43
+\BOOKMARK [0][-]{chapter.8}{Join Statements, Set Operations, Nested Queries and Grouping}{}% 44
+\BOOKMARK [1][-]{section.8.1}{Aim}{chapter.8}% 45
+\BOOKMARK [1][-]{section.8.2}{Theory}{chapter.8}% 46
+\BOOKMARK [2][-]{subsection.8.2.1}{Joins}{section.8.2}% 47
+\BOOKMARK [2][-]{subsection.8.2.2}{Set Operations}{section.8.2}% 48
+\BOOKMARK [2][-]{subsection.8.2.3}{Nested Queries}{section.8.2}% 49
+\BOOKMARK [2][-]{subsection.8.2.4}{Grouping}{section.8.2}% 50
+\BOOKMARK [1][-]{section.8.3}{Code and Output}{chapter.8}% 51
+\BOOKMARK [1][-]{section.8.4}{Result}{chapter.8}% 52
+\BOOKMARK [0][-]{chapter.9}{PL/SQL and Sequence}{}% 53
+\BOOKMARK [1][-]{section.9.1}{Aim}{chapter.9}% 54
+\BOOKMARK [1][-]{section.9.2}{Theory}{chapter.9}% 55
+\BOOKMARK [1][-]{section.9.3}{Code and Output}{chapter.9}% 56
+\BOOKMARK [1][-]{section.9.4}{Result}{chapter.9}% 57
+\BOOKMARK [0][-]{chapter.10}{Cursors}{}% 58
+\BOOKMARK [1][-]{section.10.1}{Aim}{chapter.10}% 59
+\BOOKMARK [1][-]{section.10.2}{Theory}{chapter.10}% 60
+\BOOKMARK [1][-]{section.10.3}{Code and Output}{chapter.10}% 61
+\BOOKMARK [1][-]{section.10.4}{Result}{chapter.10}% 62
+\BOOKMARK [0][-]{chapter.11}{Triggers and Exception Handling}{}% 63
+\BOOKMARK [1][-]{section.11.1}{Aim}{chapter.11}% 64
+\BOOKMARK [1][-]{section.11.2}{Theory}{chapter.11}% 65
+\BOOKMARK [2][-]{subsection.11.2.1}{Triggers}{section.11.2}% 66
+\BOOKMARK [2][-]{subsection.11.2.2}{Exceptions}{section.11.2}% 67
+\BOOKMARK [1][-]{section.11.3}{Code and Output}{chapter.11}% 68
+\BOOKMARK [1][-]{section.11.4}{Result}{chapter.11}% 69
+\BOOKMARK [0][-]{chapter.12}{Procedure, Functions and Packages}{}% 70
+\BOOKMARK [1][-]{section.12.1}{Aim}{chapter.12}% 71
+\BOOKMARK [1][-]{section.12.2}{Theory}{chapter.12}% 72
+\BOOKMARK [2][-]{subsection.12.2.1}{Functions}{section.12.2}% 73
+\BOOKMARK [2][-]{subsection.12.2.2}{Procedures}{section.12.2}% 74
+\BOOKMARK [2][-]{subsection.12.2.3}{Package}{section.12.2}% 75
+\BOOKMARK [1][-]{section.12.3}{Code and Output}{chapter.12}% 76
+\BOOKMARK [1][-]{section.12.4}{Result}{chapter.12}% 77

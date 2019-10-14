@@ -1,0 +1,84 @@
+\section{Aim}
+ Familiarize oneself with SQL. Learn about its history and how it works.
+
+\section{{Theory}}
+
+\subsection{History of SQL}
+
+SQL was initially developed at IBM by Donald D. Chamberlin and Raymond F. Boyce after learning about the relational model from Ted Codd in the early 1970s. This version, initially called SEQUEL (Structured English Query Language), was designed to manipulate and retrieve data stored in IBM's original quasi-relational database management system, System R, which a group at IBM San Jose Research Laboratory had developed during the 1970s.
+
+Chamberlin and Boyce's first attempt of a relational database language was Square, but it was difficult to use due to subscript notation. After moving to the San Jose Research Laboratory in 1973, they began work on SEQUEL. The acronym SEQUEL was later changed to SQL because "SEQUEL" was a trademark of the UK-based Hawker Siddeley Dynamics Engineering Limited company.
+
+After testing SQL at customer test sites to determine the usefulness and practicality of the system, IBM began developing commercial products based on their System R prototype including System/38, SQL/DS, and DB2, which were commercially available in 1979, 1981, and 1983, respectively.
+
+In the late 1970s, Relational Software, Inc. (now Oracle Corporation) saw the potential of the concepts described by Codd, Chamberlin, and Boyce, and developed their own SQL-based RDBMS with aspirations of selling it to the U.S. Navy, Central Intelligence Agency, and other U.S. government agencies. In June 1979, Relational Software, Inc. introduced the first commercially available implementation of SQL, Oracle V2 (Version2) for VAX computers.
+
+\subsection{How SQL Works}
+
+The strengths of SQL provide benefits for all types of users, including application programmers, database administrators, managers, and end users. Technically speaking, SQL is a data sublanguage. The purpose of SQL is to provide an interface to a relational database such as Oracle, and all SQL statements are instructions to the database. In this SQL differs from general-purpose programming languages like C and BASIC. Among the features of SQL are the following:
+\begin{enumerate}
+\item It processes sets of data as groups rather than as individual units.
+\item It provides automatic navigation to the data.
+\item It uses statements that are complex and powerful individually, and that therefore stand alone.
+\end{enumerate}
+
+SQL provides statements for a variety of tasks, including:
+\begin{enumerate}
+\item Querying data
+\item Inserting, updating, and deleting rows in a table
+\item Creating, replacing, altering, and dropping objects
+\item Controlling access to the database and its objects
+\item Guaranteeing database consistency and integrity
+\end{enumerate}
+
+SQL unifies all of the above tasks in one consistent language. All major relational database management systems support SQL, so you can transfer all skills you have gained with SQL from one database to another. In addition, all programs written in SQL are portable. They can often be moved from one database to another with very little modification. Summary of SQL Statements
+
+SQL statements are divided into these categories:
+\begin{enumerate}
+\item Data Definition Language (DDL) Statements
+\item Data Manipulation Language (DML) Statements
+\item Transaction Control Statements (TCL)
+\item Session Control Statement
+\item System Control Statement
+\end{enumerate}
+
+\subsection{Syntax of SQL}
+
+The SQL language is subdivided into several language elements, including:
+\begin{itemize}
+\item Clauses, which are constituent components of statements and queries. (In some cases, these are optional.)[19]
+\item Expressions, which can produce either scalar values, or tables consisting of columns and rows of data
+\item Predicates, which specify conditions that can be evaluated to SQL three-valued logic (3VL) (true/false/unknown) or Boolean truth values and are used to limit the effects of statements and queries, or to change program flow.
+\item Queries, which retrieve the data based on specific criteria. This is an important element of SQL.
+\item Statements, which may have a persistent effect on schemata and data, or may control transactions, program flow, connections, sessions, or diagnostics.
+\item SQL statements also include the semicolon (";") statement terminator. Though not required on every platform, it is defined as a standard part of the SQL grammar.
+\item Insignificant whitespace is generally ignored in SQL statements and queries, making it easier to format SQL code for readability.
+\end{itemize}
+
+\subsection{Datatypes in SQL}
+
+A datatype associates a fixed set of properties with the values that can be used in a column of a table
+or in an argument of a procedure or function. These properties cause Oracle to treat values of one
+datatype differently from values of another datatype. For example, Oracle can add values of
+NUMBER datatype, but not values of RAW datatype.
+Oracle supplies the following built-in datatypes:character data types
+\begin{enumerate}
+\item CHAR
+\item NCHAR
+\item VARCHAR2 and VARCHAR
+\item NVARCHAR2
+\item CLOB
+\item NCLOB
+\item LONG
+\item NUMBER
+\item DATE
+\item Binary
+\item BLOB
+\item BFILE
+\item RAW
+\item LONG RAW
+\end{enumerate}
+
+
+\section{Result}
+Familiarization with the history of SQL was done.
